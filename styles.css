@@ -1,0 +1,416 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* utlity classes here */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.top-navbar {
+    background-color: #1C1B23;
+    padding: 20px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container a {
+
+    width: 30px;
+
+}
+
+.logo-container img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.logo-container {
+    border-radius: 5px;
+}
+
+.menu-links {
+    display: flex;
+    margin: 0;
+
+    padding: 0;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.menu-links li a {
+    /* padding: 5px; */
+    display: block;
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;
+    color: #56555C;
+    padding: 0.775rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li a:hover {
+    color: #ddd;
+}
+
+.menu-toggle-button {
+    position: absolute;
+    display: none;
+    right: 1rem;
+    flex-direction: column;
+    gap: 4px;
+    height: 21px;
+    width: 30px;
+}
+
+.menu-toggle-button .bars {
+    width: 100%;
+    gap: 3px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+    /* margin: 6px auto; */
+}
+
+
+
+.info-wrapper {
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C1B23;
+    /* background: linear-gradient(30deg, #111827, #18202f, #697585); */
+    color: white;
+    gap: 1rem;
+}
+
+.profile-img {
+    width: 50%;
+    background-color: transparent;
+
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+
+
+}
+
+
+.intro {
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    text-wrap: wrap;
+}
+
+.button {
+    --color: #ddd;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 0.9em;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+.button::before,
+.button::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button:hover {
+    color: rgb(10, 25, 30);
+}
+
+.button:active {
+    filter: brightness(.8);
+}
+
+
+.intro p {
+    overflow: hidden;
+    color: #707887;
+}
+
+.intro h1 {
+    text-align: center;
+}
+
+.intro .job {
+    color: #3E2067;
+}
+
+.projects-article {
+    padding: 20px;
+    background-color: #1C1B23;
+}
+
+.projects-article h3 {
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: white;
+}
+
+.projects-container .project-link {
+    text-decoration: none;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.project {
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 50px 36px 28px inset;
+
+}
+
+.project h4 {
+    padding: 5px;
+    color: #ddd;
+}
+
+.project p {
+    padding: 5px;
+    color: #56555C;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+    gap: 2rem;
+    background-color: #1C1B23;
+}
+
+.skills {
+    background-color: #14131A;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.skills h4 {
+    color: white;
+    margin-block: 1.5rem;
+    text-align: center;
+}
+
+.skills-article {
+    background-color: #1C1B23;
+    color: #ddd;
+    padding: 20px;
+}
+
+.skills-article h3 {
+    color: white;
+    margin-block: 2rem;
+    text-align: center;
+
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-flow: row;
+    gap: 0.876rem;
+    list-style-type: none;
+}
+
+.skills ul li {
+    background-color: #0F0F0F;
+    color: #56555C;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.skills ul li:nth-child(1) {
+    border: 1px solid royalblue;
+}
+
+.skills ul li:nth-child(2) {
+    border: 1px solid yellow;
+}
+
+.skills ul li:nth-child(3) {
+    border: 1px solid green;
+}
+
+.skills ul li:nth-child(4) {
+    border: 1px solid rebeccapurple;
+}
+
+
+
+.skills::before {
+    content: '';
+    position: absolute;
+    background-color: green;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 15px;
+}
+
+.skills::after {
+    content: '';
+    position: absolute;
+    background-color: greenyellow;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 15px;
+    left: 50px;
+}
+
+.contactme-section {
+    background-color: #1C1B23;
+}
+
+.contactme-section form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+.form textarea {
+    width: 100%;
+}
+
+.input-group {
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.input-group label {
+    position: absolute;
+    top: 1px;
+}
+
+.input-group input {
+    padding: 12px 10px 8px 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .top-navbar {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .menu-toggle-button {
+        display: flex;
+    }
+
+    .menu-links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-links li {
+        text-align: center;
+    }
+
+    .info-wrapper {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .menu-links li {
+        width: 100%;
+    }
+
+    .menu-links.active {
+        display: flex;
+    }
+
+    .intro {
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+
+}
