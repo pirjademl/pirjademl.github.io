@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide@2.0.7/css/lucide.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="index.js"></script>
 </head>
 
 <body>
     <header>
-
         <nav class="top-navbar">
             <div class="logo-container">
                 <a href="">
@@ -39,25 +39,18 @@
 
         </nav>
     </header>
-    <!-- <div class="sidebar">
-        <ul class="sidebar-links">
-            <li><a href="">Github</a></li>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Twitter </a></li>
-        </ul>
-    </div> -->
+
     <main>
         <article>
             <section class="flex info-wrapper">
                 <div class="intro">
 
-                    <h1>Web Devloper and Mern stack Enthausist</h1>
+                    <h1>Web Devloper and Mern stack Developer</h1>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis minima cumque modi qui
                         tenetur nesciunt incidunt quasi distinctio ipsa, enim quas velit, cum et consequatur labore
                         architecto praesentium deleniti?</p>
-                    <Button class="button">Contact me</Button>
+                    <a href="#contact-me-section" class="button">Contact me</a>
                 </div>
                 <!-- <div class="image-container">
                     <img class="profile-img" src="assets/ex1-removebg-preview.png" alt="profile-img">
@@ -70,7 +63,7 @@
 
             <h3>Projects
             </h3>
-            <div class="projects-container">
+            <div class=" grid projects-container">
                 <a target="_blank" class="project-link" href="https://github.com/pirjademl/Examination_Portal">
                     <div class="project">
                         <img src="assets/Online test-bro.png" alt="Online Examination">
@@ -100,6 +93,7 @@
                         <p>Nodejs,Express,JWT,MongoDB,bcrypt</p>
                     </div>
                 </a>
+            </div>
         </article>
         <article class="skills-article">
             <h3>What I Know </h3>
@@ -118,7 +112,9 @@
                     <h4>Backend</h4>
                     <ul>
                         <li>Nodejs</li>
-                        <li>Express</li>
+                        <li>Express js</li>
+                        <li>Bun js</li>
+                        <li>Elysia</li>
                         <li>Java</li>
                     </ul>
                 </div>
@@ -133,7 +129,7 @@
 
                     </ul>
                 </div>
-                <div class="skills databases">
+                <div class="skills devops">
                     <h4>DevOps</h4>
                     <ul>
                         <li>Aws</li>
@@ -148,23 +144,110 @@
             </div>
         </article>
     </main>
-    <!-- <section class="contactme-section">
+    <!-- Contact Me section yet to be coded -->
+
+    <section class="certificate-section">
+
+        <h4> Certificates </h4>
+        <article class="certificates-article">
+            <div class="Certificates grid">
+
+                <div class="certificate infosys">
+                    <title>HTML</title>
+                    <figure class="snip1543">
+                        <img src="certificates/Infosys html certificate-1.png" alt="HTML Certificate">
+                        <figcaption>
+                            <h3>HTML Web Dev</h3>
+                            <p>Certified in HTML by Infosys for creating structured and accessible web pages using
+                                HTML5.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="certificate infosys">
+                    <title>CSS</title>
+                    <figure class="snip1543">
+                        <img src="certificates/Infosys css certificate-1.png" alt="CSS Certificate">
+                        <figcaption>
+                            <h3>CSS Styling</h3>
+                            <p>Proficient in CSS styling techniques, enhancing visual appeal and user experience in web
+                                design.</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
 
-        <form class="form" action="">
-            <div class=" flex input-group">
-                <label for="firstname">Enter Firstname</label>
-                <input type="text" name="" id="firstname">
+                <div class="certificate infosys">
+                    <title>Linux</title>
+                    <figure class="snip1543">
+                        <img src="certificates/Linux certificate-1.png" alt="Linux Certificate">
+                        <figcaption>
+                            <h3>Linux Admin</h3>
+                            <p>Certified in Linux for expertise in system administration and command-line operations.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-                <label for="lastname">Enter lastname</label>
-                <input type="text" name="" id="lastname">
+               
+                <div class="certificate infosys">
+                    <title>Python</title>
+                    <figure class="snip1543">
+                        <img src="certificates/python certificate-1.png" alt="Python Certificate">
+                        <figcaption>
+                            <h3>Python Basics</h3>
+                            <p>Completed a foundational Python course, establishing fundamental skills for application
+                                development.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
             </div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Submit">
 
 
+        </article>
+    </section>
+    <section class="contact-me-section">
+        <h2>Contact me</h2>
+        <form id="contact-form" class="contact-form">
+            <h3>Send a message</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required="true">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
         </form>
-    </section> -->
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Email: example@email.com</p>
+                <p>Phone: +1-123-456-7890</p>
+                <p>Address: 123 Main St, City, Country</p>
+            </div>
+            <div class="quick-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/yourprofile" target="_blank">
+                    <i class="li li-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/yourusername" target="_blank">
+                    <i data-lucide="github">github</i>
+
+                </a>
+                <!-- Add more social links with Lucide icons as needed -->
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
