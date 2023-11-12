@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide@2.0.7/css/lucide.css">
+    <title>Magdum Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,65 +29,63 @@
 
                 </span>
             </a>
-            <ul class="menu-links" id="menu-links"> <!-- Add an ID to target the ul element directly -->
+            <ul class="menu-links" id="menu-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Contact me </a></li>
             </ul>
-
-
         </nav>
     </header>
 
     <main>
         <article>
-            <section class="flex info-wrapper">
+            <section class="flex info-wrapper ">
                 <div class="intro">
-
-                    <h1>Web Devloper and Mern stack Developer</h1>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis minima cumque modi qui
-                        tenetur nesciunt incidunt quasi distinctio ipsa, enim quas velit, cum et consequatur labore
-                        architecto praesentium deleniti?</p>
-                    <a href="#contact-me-section" class="button">Contact me</a>
+                    <h1>Web Developer and MERN Stack Developer</h1>
+                    <p>I am a passionate web developer with expertise in the MERN stack. Curious about everything in the
+                        tech world.</p>
+                    <div class="flex gap-2rem">
+                        <a href="#contact-me-section" class="button">Contact Me</a>
+                        <a href="assets/Magdum_Pirjade_Resume.pdf"  download="Magdum_Pirjade_Resume" class="download-btn">Download Resume</a>
+                    </div>
                 </div>
                 <!-- <div class="image-container">
-                    <img class="profile-img" src="assets/ex1-removebg-preview.png" alt="profile-img">
-
+                    <img class="profile-img" src="assets/removedbg.jpg" alt="profile-img">
                 </div> -->
             </section>
+
         </article>
-        <article class="projects-article">
+        <article class="projects-article ">
 
 
             <h3>Projects
             </h3>
             <div class=" grid projects-container">
                 <a target="_blank" class="project-link" href="https://github.com/pirjademl/Examination_Portal">
-                    <div class="project">
+                    <div class="project hidden">
                         <img src="assets/Online test-bro.png" alt="Online Examination">
                         <h4>Examination Portal</h4>
-                        <p>React,redux,Nodejs,express,mongodb</p>
+                        <p>React,redux,Nodejs,express,MongoDB,mongoose</p>
 
                     </div>
                 </a>
                 <a target="_blank" class="project-link" href="https://github.com/pirjademl/">
-                    <div class="project">
+                    <div class="project hidden">
                         <img src="assets/Vaccine development-rafiki.png" alt="">
                         <h4>Vaccine Management</h4>
                         <p>Java, Mysql,JDBC,Html,css,Javscript</p>
                     </div>
                 </a>
                 <a target="_blank" class="project-link" href="https://github.com/pirjademl/job-Dekho">
-                    <div class="project">
+                    <div class="project hidden">
                         <img src="assets/Job hunt-amico.png" alt="">
                         <h4>Job Portal</h4>
                         <p>Java,Mysql,Jdbc,html,css,javascript</p>
                     </div>
                 </a>
                 <a target="_blank" class="project-link" href="https://github.com/pirjademl/Internship_Assignment">
-                    <div class="project">
+                    <div class="project hidden">
                         <img src="assets/Book lover-rafiki.png" alt="">
                         <h4>Book Management RESTful API</h4>
                         <p>Nodejs,Express,JWT,MongoDB,bcrypt</p>
@@ -97,8 +95,8 @@
         </article>
         <article class="skills-article">
             <h3>What I Know </h3>
-            <div class="skills-container">
-                <div class="skills frontend">
+            <div class="skills-container hidden">
+                <div class="skills frontend hidden">
                     <h4>Frontend</h4>
                     <ul>
                         <li>HTML</li>
@@ -108,7 +106,7 @@
                         <li>Bootstrap</li>
                     </ul>
                 </div>
-                <div class="skills backend">
+                <div class="skills backend hidden">
                     <h4>Backend</h4>
                     <ul>
                         <li>Nodejs</li>
@@ -118,26 +116,22 @@
                         <li>Java</li>
                     </ul>
                 </div>
-                <div class="skills databases">
+                <div class="skills databases hidden">
                     <h4>Database</h4>
                     <ul>
                         <li>MongoDB</li>
                         <li>MySQL</li>
                         <li>Oracle</li>
                         <li>SQlite</li>
-
-
                     </ul>
                 </div>
-                <div class="skills devops">
+                <div class="skills devops hidden">
                     <h4>DevOps</h4>
                     <ul>
                         <li>Aws</li>
                         <li>git</li>
                         <li>github</li>
                         <li>Linux</li>
-
-
                     </ul>
                 </div>
 
@@ -146,7 +140,7 @@
     </main>
     <!-- Contact Me section yet to be coded -->
 
-    <section class="certificate-section">
+    <section class="certificate-section ">
 
         <h4> Certificates </h4>
         <article class="certificates-article">
@@ -189,11 +183,22 @@
                     </figure>
                 </div>
 
-               
+
                 <div class="certificate infosys">
                     <title>Python</title>
                     <figure class="snip1543">
                         <img src="certificates/python certificate-1.png" alt="Python Certificate">
+                        <figcaption>
+                            <h3>Python Basics</h3>
+                            <p>Completed a foundational Python course, establishing fundamental skills for application
+                                development.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="certificate hackerrank">
+                    <title>Python</title>
+                    <figure class="snip1543">
+                        <img src="certificates/hackerrank-java-certificate.png" alt="Python Certificate">
                         <figcaption>
                             <h3>Python Basics</h3>
                             <p>Completed a foundational Python course, establishing fundamental skills for application
@@ -207,7 +212,7 @@
 
         </article>
     </section>
-    <section class="contact-me-section">
+    <section class="contact-me-section hidden">
         <h2>Contact me</h2>
         <form id="contact-form" class="contact-form">
             <h3>Send a message</h3>
@@ -223,28 +228,37 @@
             <button type="submit">Send</button>
         </form>
     </section>
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <p>Email: example@email.com</p>
-                <p>Phone: +1-123-456-7890</p>
-                <p>Address: 123 Main St, City, Country</p>
+    <footer class="footer">
+        <div class="container row">
+            <div class="footer-col">
+                <h4>Contacts</h4>
+                <ul>
+                    <li><a href="#">pirjademl7@gmail.com</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">visit website</a></li>
+                    <li><a href="assets/Magdum_Pirjade_Resume.pdf" download="Magdum_Pirjade_Resume">Download Resume</a>
+                    </li>
+                </ul>
             </div>
-            <div class="quick-links">
-                <a href="index.html">Home</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+            <div class="footer-col">
+                <h4>Navigation links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
             </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/yourprofile" target="_blank">
-                    <i class="li li-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/yourusername" target="_blank">
-                    <i data-lucide="github">github</i>
-
-                </a>
-                <!-- Add more social links with Lucide icons as needed -->
+            <div class="footer-col">
+                <h4>follow me</h4>
+                <div class="social-links">
+                    <a href="https://github.com/pirjademl"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/iampirjade"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/magdum._pirjade"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/magdum-pirjade-981955215/"><i class="fa-brands fa-linkedin-in">
+                            <a href="https://www.github.com/pirjademl"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
