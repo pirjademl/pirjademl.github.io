@@ -704,6 +704,7 @@ footer {
 
     .menu-links li {
         text-align: center;
+        width:100%;
     }
 
     .info-wrapper {
@@ -711,9 +712,7 @@ footer {
         padding: 20px;
     }
 
-    .menu-links li {
-        width: 100%;
-    }
+
 
     .menu-links.active {
         display: flex;
