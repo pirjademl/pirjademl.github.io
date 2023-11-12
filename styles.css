@@ -786,16 +786,9 @@ ul {
         align-items: center;
     }
 
-    .image-container {
-        margin: 0 auto;
-    }
-
-
     .menu-links.active {
         display: flex;
     }
-
-
 
     .intro h1 {
         font-size: 1.5rem;
