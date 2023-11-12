@@ -195,6 +195,7 @@ header {
 .intro p {
     overflow: hidden;
     color: #707887;
+    font-size: 1.3rem;
 }
 
 .intro h1 {
