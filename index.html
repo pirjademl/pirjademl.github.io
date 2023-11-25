@@ -30,23 +30,24 @@
                 </span>
             </a>
             <ul class="menu-links" id="menu-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact me </a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact me </a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <article>
-            <section class="flex info-wrapper ">
+            <section class="flex info-wrapper " id="about">
                 <div class="intro">
                     <h1>Web Developer | MERN Stack Enthusiast</h1>
-                    <p>I'm Magdum, a passionate web developer skilled in the MERN stack. I specialize in creating dynamic
+                    <p>I'm Magdum, a passionate web developer skilled in the MERN stack. I specialize in creating
+                        dynamic
                         and user-friendly web applications.</p>
                     <div class="flex gap-2rem">
-                        <a href="#contact-me-section" class="button">Contact Me</a>
+                        <a href="#contact-me" class="button">Contact Me</a>
                         <a href="assets/Magdum_Pirjade_Resume.pdf" download="Magdum_Pirjade_Resume"
                             class="download-btn">Download Resume</a>
                     </div>
@@ -57,7 +58,7 @@
             </section>
 
         </article>
-        <article class="projects-article ">
+        <article class="projects-article " id="projects">
 
 
             <h3>Projects
@@ -139,7 +140,6 @@
             </div>
         </article>
     </main>
-    <!-- Contact Me section yet to be coded -->
 
     <section class="certificate-section ">
 
@@ -170,6 +170,18 @@
                         </figcaption>
                     </figure>
                 </div>
+                <div class="certificate infosys">
+                    <title>JavaScript</title>
+                    <figure class="snip1543">
+                        <img src="certificates/Javascript-Infosys.png" alt="JavaScript Certificate">
+                        <figcaption>
+                            <h3>JavaScript for Modern Applications</h3>
+                            <p>JavaScript for modern web development, gaining proficiency in
+                                building dynamic and interactive web applications.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
 
 
                 <div class="certificate infosys">
@@ -214,7 +226,7 @@
 
         </article>
     </section>
-    <section class="contact-me-section hidden">
+    <section class="contact-me-section hidden" id="contact-me">
         <h2>Contact me</h2>
         <form id="contact-form" class="contact-form">
             <h3>Send a message</h3>
@@ -247,9 +259,9 @@
                 <h4>Navigation links</h4>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </div>
             <div class="footer-col">

@@ -184,7 +184,7 @@ header {
     padding: 15px;
     border-radius: 12px;
     text-decoration: none;
-    transition: all 0.s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .download-btn:hover {
@@ -195,11 +195,15 @@ header {
 .intro p {
     overflow: hidden;
     color: #707887;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 700px;
+
 }
 
 .intro h1 {
     text-align: center;
+    text-wrap: balance;
 }
 
 .intro .job {
@@ -208,7 +212,7 @@ header {
 
 .projects-article {
     padding: 20px;
-    background-color: #1C1B23;
+    /* background-color: #1C1B23; */
 }
 
 .projects-article h3 {
@@ -219,6 +223,8 @@ header {
 
 .projects-container .project-link {
     text-decoration: none;
+    background-color: #14131A;
+    border-radius: 1.2rem;
 }
 
 
@@ -228,9 +234,7 @@ header {
 }
 
 .project {
-    border-radius: 20px;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 50px 36px 28px inset;
 
 }
 
@@ -554,13 +558,9 @@ ul {
 .certificate {
     background-color: #14131A;
     padding: 10px;
+    border-radius: 0.675rem;
 
 }
-
-/* Certificates hover effect */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Teko:700);
-
 
 .snip1543 {
     background-color: #fff;
